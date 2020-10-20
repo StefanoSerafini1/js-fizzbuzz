@@ -9,15 +9,15 @@ for (var i = 0; i < 100; i++) {
 //controllo se multiplo di 3 e 5 usando and(solo se entrambe sono vere)
   if(i % 3 == 0 && i % 5 == 0){
     console.log('FizzBuzz');
-    document.getElementById('val').innerHTML = 'FizzBuzz';
+    document.getElementById('val').innerHTML +=('<li>' + 'FizzBuzz'  + '</li>');
   }else if(i % 3 == 0){//controllo se multiplo di 3
     console.log('Fizz');
-    document.getElementById('val').innerHTML = 'Fizz';
+    document.getElementById('val').innerHTML +=('<li>' + 'Fizz'  + '</li>');
   }else if(i % 5 == 0){//controllo se multiplo di  5
     console.log('Buzz');
-    document.getElementById('val').innerHTML = 'Buzz';
+    document.getElementById('val').innerHTML +=('<li>' + 'Buzz'  + '</li>');
   }else{//se non è ne multiplo di uno ne del altro ne di entreìambi stampo il numero
     console.log(i);
-    document.getElementById('val').innerHTML = i;
+    document.getElementById('val').innerHTML +=('<li>' + i + '</li>');
   }
 }
