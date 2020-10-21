@@ -5,7 +5,7 @@
 
 
 //genero 100 numeri con for
-for (var i = 0; i < 100; i++) {
+for (var i = 1; i <= 100; i++) {
 //controllo se multiplo di 3 e 5 usando and(solo se entrambe sono vere)
   if(i % 3 == 0 && i % 5 == 0){
     console.log('FizzBuzz');
